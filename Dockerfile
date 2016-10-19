@@ -1,6 +1,6 @@
-FROM confluentinc/cp-kafka-connect
+FROM confluentinc/cp-kafka-rest
 
-COPY . /usr/src/kafka-connect-hdfs
-WORKDIR /usr/src/kafka-connect-hdfs
+COPY . /app/src
+WORKDIR /app/src
 
 RUN docker/run.sh
